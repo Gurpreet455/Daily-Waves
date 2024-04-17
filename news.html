@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="container">
+                <div class="nav-bar">
+                    <div>
+                        <p class="logo">WHTM</p>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="news.html" class="active">News</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <p class="themeMode">☀︎ Light Mode</p>
+                </div>
+            </div>
+        </header>
+        <section class="hero-section">
+            <div class="container">
+                <div class="row justify-btw">
+                    <div class="col-6">
+                        <div class="hero-content">
+                            <div class="hero-section-content">
+                                <p>Stay Informed</p>
+                                <h1>Stay Ahead: Your Gateway to Breaking News Coverage</h1>
+                            </div>
+                            <div class="paraStyle">
+                                <p>
+                                    Stay informed with our comprehensive coverage of breaking news and in-depth analysis. Dive into the latest stories and uncover the insights shaping the world around you.
+                                </p>
+                            </div>
+                            <div class="readMore"><a href="#">Read More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-6 algn-cntr">
+                        <div class="txt-cntr news-img">
+                            <img src="assets/images/news-img.webp" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ptb-60">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <form class="newsForm">
+                            <input type="text" />
+                            <button>Search</button>
+                        </form>
+                        <div class="news-container"></div>
+                        <!-- dynamic data -->
+                    </div>
+                    <div class="col-4">
+                        <div class="sideBar-cont">
+                            <div class="today-news">
+                                <img src="assets/images/news-today.webp" alt="" />
+                                <h6>Breaking News</h6>
+                            </div>
+                            <div class="sideBarContainer">
+                                <!-- dynamic data -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="loading">
+            <div class="container txt-cntr">
+                <div class="loader"></div>
+            </div>
+        </section>
+        <footer>
+            <div class="container txt-cntr">
+                <p>WTHM | Copyright ©2024 | All Rights Reserved</p>
+            </div>
+        </footer>
+    </main>
+</body>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/news.js"></script>
+<!--https://gnews.io/api/v4/search?q=punjab&max=1&apikey=ba9d75a835070e955b5d04e139e782d1-->
+
+</html>
