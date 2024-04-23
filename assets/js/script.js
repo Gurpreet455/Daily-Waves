@@ -2,7 +2,7 @@ fetchData = document.getElementById("fetchData");
 printingData = document.querySelector(".weather-box-tranparent");
 weatherCity = document.querySelector("#weatherCity");
 temp = document.querySelector(".temp");
-var loading = document.querySelector(".loading");
+loading = document.querySelector(".loading");
 forecastContent = document.querySelector(".forecastContent");
 apiKey = "871955f724cb42c171f5a6bd8a9bc032";
 const month = [
@@ -27,11 +27,11 @@ gettingMonth = month[gettingDate.getMonth()];
 fetchData.addEventListener("click", async function (e) {
   e.preventDefault();
   cityValue = weatherCity.value;
-  loading.style.display = "block";
+  // loading.style.display = "block";
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityValue}&appid=${apiKey}&units=metric`;
   response = await fetch(url);
   data = await response.json();
-  loading.style.display = "none";
+  // loading.style.display = "none";
 
   console.log(data);
 
