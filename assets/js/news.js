@@ -6,6 +6,8 @@ newsInput = document.querySelector(".newsForm input");
 newsContainer = document.querySelector(".news-container");
 sideBarContainer = document.querySelector(".sideBarContainer");
 newsFormButton = document.querySelector(".newsForm button");
+var body = document.querySelector("body");
+// console.log(body)
 var loading = document.querySelector(".loading");
 // loadingRes = loading.display.style = "block";
 // loadingValue = true;
@@ -14,7 +16,11 @@ var loading = document.querySelector(".loading");
 //   : (loading.display.style = "none");
 
 newsFormButton.addEventListener("click", function (e) {
-  loading.style.display = "block";
+  loading.style.display = "flex";
+
+  body.style.overflow = "hidden";
+
+  console.log(body)
   e.preventDefault();
   newsInputValue = newsInput.value;
   fetchingData(
@@ -33,6 +39,7 @@ async function fetchingData(url) {
   displayNews(data);
   sideBarContent(data);
   loading.style.display = "none";
+  body.style.overflow = "auto";
   // loadingValue = false;
   // console.log(loadingValue);
 }
